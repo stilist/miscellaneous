@@ -1,0 +1,5 @@
+# Miscellaneous
+
+This repository is meant to store the little pieces of code I write — scripts,
+snippets, anything important enough to write but trivial enough to not deserve
+its own repository.
