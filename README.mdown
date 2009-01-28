@@ -3,3 +3,30 @@
 This repository is meant to store the little pieces of code I write — scripts,
 snippets, anything important enough to write but trivial enough to not deserve
 its own repository.
+
+Contributions are appreciated!
+
+## Contents
+
+### backupmusic
+
+I have two hard disks with music — my primary one, used with iTunes, and a
+backup. I don’t manage these with Time Machine, but I wanted a simple way to
+keep them synced. Because one is an <abbr class='smallcaps'>NTFS</abbr> volume,
+using a tool like Carbon Copy Cloner isn’t an option. I don’t get automation,
+but that’s okay because I only plug in the backup before going to bed anyhow.
+
+So I put this together. It 1) copies library files from the iTunes directory to
+the primary disk, then 2) mirrors the primary disk to the backup. Thus I can
+restore both the music itself *and* the iTunes library files, in case either
+becomes corrupted.
+
+### flip
+
+This is my attempt at writing a script that will take an image and animate
+flipping it over, in the style of the iPhone’s Weather app. I originally
+meant it to be used as a Bowtie theme, but gave up after several days of little
+progress.
+
+It’s obviously incomplete, but it works pretty well for most inputs. The next
+step is to write a loop that runs the actual animation.
