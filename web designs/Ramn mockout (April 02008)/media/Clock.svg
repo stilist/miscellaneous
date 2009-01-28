@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     onload="clockInit(evt);"
+     onunload="clockTerm();"
+     viewBox="0 0 110 110">
+ <g id="clockFace" transform="translate(55, 55)" fill="#000">
+  <g id="chapter">
+   <rect id="chapterLeft" width="3" height="13" x="0.75" y="36"/>
+   <rect id="chapterRight" width="3" height="13" x="-3.75" y="36"/>
+  </g>
+  <g id="chapterRing">
+   <use xlink:href="#chapter" transform="rotate(30)"/>
+   <use xlink:href="#chapter" transform="rotate(60)"/>
+   <use xlink:href="#chapter" transform="rotate(90)"/>
+   <use xlink:href="#chapter" transform="rotate(120)"/>
+   <use xlink:href="#chapter" transform="rotate(150)"/>
+   <use xlink:href="#chapter" transform="rotate(180)"/>
+   <use xlink:href="#chapter" transform="rotate(210)"/>
+   <use xlink:href="#chapter" transform="rotate(240)"/>
+   <use xlink:href="#chapter" transform="rotate(270)"/>
+   <use xlink:href="#chapter" transform="rotate(300)"/>
+   <use xlink:href="#chapter" transform="rotate(330)"/>
+   <circle fill="none" stroke="#000" stroke-width="2.5" r="7"/>
+  </g>
+  <g id="aiguilles">
+   <polygon id="minuteHand" points="-1.5,9 -1,52 1,52 1.5,9"/>
+   <polygon id="hourHand" points="-2,9 -1,40 1,40 2,9"/>
+   <g id="secondHand">
+    <polygon points="-0.45,9 -0.5,20 .5,20 .45,9"/>
+    <polygon points="-0.45,9 -0.20,52 .20,52 .45,9" transform="rotate(180)"/>
+   </g>
+  </g>
+ </g>
+
+ <script type="text/javascript">
+<![CDATA[
+  var secondHand;
+  var minuteHand;
+  var hourHand;
+  var clockUpdate;
+
+  function clockInit(evt)
+  {
+    clock = evt.target.ownerDocument;
+
+    secondHand = clock.getElementById("secondHand");
+    minuteHand = clock.getElementById("minuteHand");
+    hourHand = clock.getElementById("hourHand");
+
+    clockUpdate = setInterval("updateSeconds()", 1000);
+
+    updateSeconds();
+    updateMinutes();
+    updateHours();
+  }
+
+  function clockTerm()
+  {
+    clearInterval(clockUpdate);
+  }
+
+  function updateSeconds()
+  {
+    var seconds = (new Date()).getSeconds();
+    if (seconds == 0)
+      updateMinutes();
+
+    angle = seconds * 6;
+    secondHand.setAttribute("transform", "rotate("+ angle +")");
+  }
+
+  function updateMinutes()
+  {
+    var minutes = (new Date()).getMinutes();
+    if (minutes == 0)
+      updateHours();
+
+    angle = (minutes * 6) - 180;
+    minuteHand.setAttribute("transform", "rotate("+ angle +")");
+  }
+
+  function updateHours()
+  {
+    var hours = (new Date()).getHours();
+    if (hours > 11)
+      hours -= 12;
+
+    angle = (hours * 30) - 180;
+    hourHand.setAttribute("transform", "rotate("+ angle +")");
+  }
+
+  ]]>
+ </script>
+</svg>

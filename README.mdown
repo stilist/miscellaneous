@@ -30,3 +30,13 @@ progress.
 
 It’s obviously incomplete, but it works pretty well for most inputs. The next
 step is to write a loop that runs the actual animation.
+
+### web designs
+
+Various designs that I started work on, but never completed for various
+reasons. In some cases I’ve converted them from static
+<abbr class='smallcaps'>PHP</abbr> and <abbr class='smallcaps'>HTML</abbr> 4
+into plain <abbr class='smallcaps'>HTML</abbr> 5, but the rest of it remains.
+
+Naturally, code quality lessens as the designs get older.
+

@@ -1,0 +1,132 @@
+body {
+ background-image: url("bg.gif");
+ color: #333;
+ font: normal normal 1em/1.4em Georgia,"Times New Roman",serif;
+ margin: 0;
+}
+div { padding: 1em; }
+h1 {
+ background: url("logo.png") top center no-repeat;
+ height: 50px;
+ margin: 0;
+ text-align: center;
+ text-indent: -3000px;
+}
+#left {
+ background: url("red.png") top left no-repeat;
+ bottom: 50px;
+ left: 50px;
+ padding-right: 12%;
+ position: absolute;
+ right: 45%;
+ top: 50px;
+}
+#right {
+ background: url("blue.png") top left no-repeat;
+ bottom: 0;
+ left: 45%;
+ padding: 1.5em;
+ position: absolute;
+ right: 50px;
+ top: 100px;
+}
+
+
+/*
+a {
+ color: #a66;
+ text-decoration: none;
+}
+a:hover {
+ border-bottom: 1px solid #333;
+ color: #933;
+}
+blockquote p { text-align: justify; }
+fieldset {
+ border: 0;
+ margin: 0;
+ padding: 0;
+}
+h1 { font-size: 18pt; }
+h2 { font-size: 16pt; }
+form,h1,h2,h3 { margin: 0; }
+ul { font-size: 12pt; }
+#copy {
+ background-color: #f0f0ff;
+ padding: 25px 20px;
+}
+#copy p {
+ font-size: 12pt;
+ margin: 0 5px;
+ text-indent: 2em;
+}
+#copy p.text {
+ margin: -15px 0 10px 0;
+ padding: 0 5px;
+}
+#main {
+ float: left;
+ width: 750px;
+}
+#main h1 {
+ background: url("logo.png") no-repeat;
+ height: 50px;
+ margin: 0;
+ text-indent: -1000px;
+}
+#masthead {
+ background: url("masthead.jpg") top left no-repeat;
+ height: 145px;
+}
+#places {
+ float: right;
+ width: 175px;
+}
+#places div, #places form {
+ background-color: #f0f0ff;
+ padding: 10px 5px;
+}
+#places div, #places form, #copy .text, #masthead { border-bottom: 5px solid #333; }
+#places form input { width: 100%; }
+#places h1 {
+ background: url("places.png") no-repeat;
+ height: 50px;
+ margin: 0;
+ text-indent: -2000px;
+}
+#places ul {
+ list-style: none;
+ margin: 0;
+ padding: 0 0 0 10px;
+}
+#quicklinks {
+ font-size: 12pt;
+ margin: 5px 0;
+}
+#quicklinks a:hover { background-color: #f0f0ff; }
+.prettify {
+ background: transparent url("bottom_right.png") top right no-repeat !important;
+ border: none !important;
+ height: 15px;
+ margin-top: -5px;
+ padding: 0 15px 0 0 !important;
+}
+.prettify span {
+ background: url("bottom_left.png") top left no-repeat;
+ display: block;
+ height: 15px;
+}
+#wrapper {
+ margin: 25px;
+ width: 950px;
+}
+.date {
+ font-size: .7em;
+ font-style: italic;
+ margin-bottom: 15px;
+}
+.sIFR-flash { visibility: visible !important; margin: 0; }
+.sIFR-replaced { visibility: visible !important; }
+span.sIFR-alternate { position: absolute; left: 0; top: 0; width: 0; height: 0; display: block; overflow: hidden; }
+.sIFR-hasFlash h2, .sIFR-hasFlash h3 { visibility: hidden; }
+*/

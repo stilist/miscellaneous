@@ -1,0 +1,84 @@
+a { color: #000; }
+
+body {
+ background-color: #999;
+ color: #333;
+ font-family: Verdana, Arial, sans-serif;
+ font-size: 62.5%;
+ margin: 0 auto;
+ padding: 0 5mm;
+ width: 236mm;
+}
+
+p { margin: 0; }
+
+#nameplate {
+ background: url('bird.png') top left no-repeat;
+ height: 45mm;
+ padding-left: 25mm;
+}
+#nameplate ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+body#about #nav_about,
+body#archive #nav_archive,
+body#home #nav_home {
+ background-color: rgba(255, 255, 255, .7);
+ color: #000;
+}
+#nameplate li a {
+ color: #fff;
+ display: block;
+ font: 2em "LubalGraph Bk BT", serif;
+ padding: 1mm;
+ text-decoration: none;
+ width: 29.5mm;
+}
+#nameplate li a:hover {
+ background-color: rgba(128, 128, 128, .7);
+}
+#nameplate li #nav_home {
+ font-size: 3em;
+}
+
+#content {
+ background-color: #aaa;
+ font-size: 1.2em;
+ padding: 17mm 26mm 26mm 26mm;
+}
+
+#content .copy {
+ min-height: 114mm;
+ -webkit-column-gap: 28mm;
+ -webkit-column-rule: 1px solid #888;
+ -webkit-column-width: 76mm;
+}
+
+#content #footnotes {
+ font-size: .8em;
+ margin-top: 3mm;
+}
+
+#content h1 {
+ font: 6mm "LubalGraph Bk BT", serif;
+ margin: 0 0 4mm 0;
+ text-transform: uppercase;
+ width: 184mm;
+}
+
+#content p {
+ line-height: 1.7em;
+ text-indent: 2.5em;
+}
+
+#content p:first-child { text-indent: 0; }
+
+/*
+    29      29
+   [17]    [17]
+26  76  28  76  26
+   [26]    [26]
+    32      32
+*/

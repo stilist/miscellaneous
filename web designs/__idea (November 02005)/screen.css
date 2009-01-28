@@ -1,0 +1,74 @@
+#article_info_print { display: none; }
+#article_info_block {
+ background: #fc0;
+  margin-left: 20%;
+  width: 60%;
+ }
+#jump_to_nav {
+  position: absolute;
+  top: 7px;
+  left: 80px;
+ }
+#nav_block {
+  border-right: 1px solid #333;
+  float: left;
+  width: 20%;
+ }
+#other_content {
+  border-top: 3px solid #333;
+  margin: 0px;
+ position: relative;
+ }
+#other_content div {
+  font-size: .8em;
+  height: 200px;
+  margin: 0px;
+  padding: 0px 3px 3px 3px;
+ }
+#search {
+  position: absolute;
+  top: 5px;
+  right: 80px;
+ }
+#search input[type="submit"] {
+  color: #333;
+ }
+#search input[type="text"] {
+  color: #333;
+  width: 125px;
+ }
+#site_info_block {
+  border-left: 1px solid #333;
+  float: right;
+  width: 20%;
+ }
+
+.section_title {
+  display: block;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: center;
+ }
+
+
+
+/* sIFR RULES */
+
+.sIFR-flash {
+  visibility: visible !important;
+  margin: 0;
+ }
+.sIFR-replaced { visibility: visible !important; }
+span.sIFR-alternate { /* this is where all the replaced stuff is sent */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+ }
+
+.sIFR-hasFlash h1,
+.sIFR-hasFlash h2
+.sIFR-hasFlash h3 { visibility: hidden; }

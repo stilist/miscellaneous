@@ -1,0 +1,33 @@
+body {
+ background: #000 url('media/black/background.gif') top left no-repeat fixed;
+}
+a {
+ color: #aaa;
+}
+
+#masthead #logo {
+ background: url('media/logo.png') bottom right no-repeat;
+}
+#masthead #archives {
+ background: url('media/archives.png') bottom right no-repeat;
+}
+#masthead #archivesearch #searchbox {
+ background: #333 url('media/black/search.gif') 235px center no-repeat;
+}
+
+#content {
+ color: #ccc;
+}
+#content .article {
+ background-image: url('media/black/article.gif');
+}
+#content .bookmark {
+ background-image: url('media/black/bookmark.gif');
+}
+#content .chat {
+ background-image: url('media/black/chat.gif');
+}
+
+#footer {
+ color: #8c8c8c;
+}

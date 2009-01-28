@@ -1,0 +1,128 @@
+a {
+ color: #aaa;
+}
+
+a:hover {
+ color: #fff;
+}
+
+a img { border: none; }
+
+abbr { border-bottom: 1px dashed #fff; }
+
+html, body {
+ background-color: #000;
+ color: #fff;
+ font: 10.5pt "Lucida Grande", Arial, sans-serif;
+ margin: 0;
+}
+
+h1 {
+ border-bottom: 2px solid #fff;
+ height: 98px;
+ margin: 0;
+}
+
+h1 a {
+ clear: both;
+ display: block;
+ padding: 1em 0 0 10px;
+}
+
+h2 {
+ left: -1000em;
+ margin: 0;
+ position: absolute;
+}
+
+p {
+ line-height: 2em;
+ margin: 0;
+ text-indent: 2em;
+}
+
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+#feed_contents {
+ background: url('feed_contents_bg.jpg') top center no-repeat;
+ border-left: 2px solid #fff;
+ bottom: 0;
+ left: 275px;
+ padding: 25px;
+ position: absolute;
+ right: 0;
+ top: 100px;
+}
+
+#feed_info {
+ background: rgba(0, 0, 0, .25);
+ display: block;
+ padding: 4px;
+ position: relative;
+}
+
+#feed_info p {
+ line-height: 1.4;
+ text-indent: 23px;
+}
+
+#feed_info #hcard {
+ position: absolute;
+}
+
+#feed_list {
+ background: url('feed_list_bg.jpg') top left no-repeat;
+ bottom: 35px;
+ padding: 20px;
+ position: absolute;
+ top: 100px;
+ width: 235px;
+}
+
+#feed_list a {
+ color: #fff;
+ display: block;
+}
+
+#feed_list li {
+ border-left: 2px solid #aaa;
+ padding: 3px 0 3px 13px;
+}
+
+#feed_list li.current {
+ background: rgba(0, 0, 0, .5);
+}
+
+#quicklinks {
+ left: 0;
+ margin: 0;
+ opacity: 0;
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+
+#quicklinks:hover {
+ background-color: #333;
+ opacity: 1;
+}
+
+#quicklinks li { display: inline; }
+
+#quicklinks ul {
+ display: inline;
+ padding: 0;
+}
+
+#settings {
+ background-color: #aaa;
+ bottom: 0;
+ left: 0;
+ height: 35px;
+ position: absolute;
+ width: 275px;
+}

@@ -1,0 +1,47 @@
+a {
+  border-bottom: 1px solid #333 !important;
+}
+blockquote {
+  border: 0px !important;
+  color: #666 !important;
+  margin: -10px -5px;
+ }
+body {
+  font-size: 11pt !Important;
+  line-height: 1.2em !important;
+  min-width: 0px !important;
+  margin: 0px !important;
+ }
+h1 {
+  font-size: 24pt !important;
+ }
+h2 {
+  font-size: 12pt !important;
+  margin: 3px 0px 7px 0px !important;
+ }
+h3 {
+  font-size: 14pt !important;
+ }
+#search, #jump_to_nav, #navigation, #other_content {
+  display: none;
+ }
+#wrapper {
+  padding: 0px !important;
+ }
+
+
+/* hide sIFR stuff from printer */
+.sIFR-flash, .sIFR-flash object, .sIFR-flash embed {
+  display: none !important;
+  height: 0;
+  width: 0;
+  position: absolute;
+  overflow: hidden;
+}
+span.sIFR-alternate {
+  visibility: visible !important;
+  display: block !important;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+}

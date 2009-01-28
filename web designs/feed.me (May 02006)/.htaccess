@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteBase /feed.me
+
+ RewriteCond %{REQUEST_FILENAME} -f [OR]
+ RewriteCond %{REQUEST_FILENAME} -d
+
+ #Security
+ RewriteRule ^\.htaccess$ - [F]
+
+ #Misc
+ RewriteRule ^main/?$ / [L]
+
+
+</IfModule>

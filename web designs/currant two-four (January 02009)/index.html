@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang='en'>
+ <head>
+  <title>Ratafia Currant wireframe</title>
+  <link rel='stylesheet' href='style.css' media='all'>
+  <link rel='stylesheet' href='wireframe.css' media='all'>
+ </head>
+ <body>
+  <ul id='nameplate'>
+   <li><a href='#' id='logo'>ratafia currant</a></li>
+   <li><a href='#'>archives</a></li>
+   <li><a href='http://delicious.com/stilist'>links</a></li>
+  </ul>
+
+  <div class='entry'>
+   <h1><a href='#'>JavaScript bookmarklet for a word count on selected text</a></h1>
+   <div class='copy twocol'>
+    <p>Sometimes I read lengthy articles or essays online and I’m curious how just how much the author has put down. I could copy the text into a text editor and find out, but why leave the browser?</p>
+    <p>It’s pretty easy to write a code snippet that gives a dumb count—meaning that it simply assumes a space indicates a new word. The answer probably won’t be exactly correct, but I’m not editing a magazine so I don’t care. Rough approximation is good enough.</p>
+    <h2>The code</h2>
+    <pre><code>// initialize variables
+var count = 0;
+var text = '';
+var words = [];
+
+// ask for the selected text
+text = document.getSelection().toString();
+// is anything selected?
+if (text != '') {
+  // make an array based on spaces as word separators
+  words = text.split(' ');
+  // the number of elements is the number of words
+  count = words.length;
+
+  alert(count + ' words.');
+}</code></pre>
+    <h2>The bookmarklet</h2>
+    <p>Simply drag the following link to your bookmarks bar (or select some text and click to see it in action): <a href='#'>word count</a></p>
+    <p>For added convenience, Safari provides shortcuts to items in the bookmarks bar—if the bookmarklet is the third item on the bar, ⌘+3 will run it.</p>
+    <h2>A final note</h2>
+    <p>This code is too simple to bother licensing. Use as you wish.</p>
+   </div>
+  </div>
+
+  <div class='entry'>
+   <h1><a href='#'>Converting 4-channel DTS audio to Apple Lossless in OS Ⅹ</a></h1>
+   <div class='copy fourcol'>
+    <h2>Why?</h2>
+    <p><a href='http://en.wikipedia.org/wiki/DTS_(sound_system)'><abbr class='smallcaps'>DTS</abbr></a> is a fancy audio format that jams extra data into generic <abbr class='smallcaps'>WAV</abbr> files. Because jukebox software generally doesn’t expect this, attempting to play the files results in static. Thus, we want to convert to something useful. The additional conversion to Apple Lossless is due to iTunes not having native support for any other lossless audio formats (to my knowledge).</p>
+    <h2>Before we get started…</h2>
+    <p>This documents what worked for me. I have no idea if this will be useful or correct for anyone else. The <a href='http://www.schudy.de/dts/dts2all-e.htm'>basic methodology</a> used comes from <a href='http://dtsguide.de.vu'>dtsguide.de.vu</a>.</p>
+    <p><em>Be aware that our resulting files will only be in stereo, rather than the source’s four channels!</em></p>
+    <h2>Software used</h2>
+    <ul>
+     <li><abbr class='smallcaps'>OS Ⅹ</abbr> 10.5.6</li>
+     <li>iTunes 8.0.2</li>
+     <li><a href='http://www.codeweavers.com/products/cxmac/'>CrossOver Pro</a> v7.1 (though CrossOver standard or <a href='http://www.kronenberg.org/darwine/'>Darwine</a> may work equally well)</li>
+     <li><a href='http://www.foobar2000.org/?page=Download'>foobar2000</a> v0.9.6</li>
+     <li><a href='http://www.softpedia.com/progDownload/foo-dtsSTAR-Download-107229.html'>foo_input_dts</a> v0.1.7</li>
+     <li><a href='http://sourceforge.net/project/showfiles.php?group_id=13478&amp;package_id=12675'>flac.exe</a> v1.2.1</li>
+     <li><a href='http://cubicfruit.com/fluke/'>Fluke</a> v0.11</li>
+    </ul>
+    <h2>Two notes regarding CrossOver</h2>
+    <ul>
+     <li>The Windows software used here will need to be installed to a Windows <abbr class='smallcaps'>XP</abbr> bottle; the General bottle should work.</li>
+     <li>The General bottle’s Windows profile directory is located at <code>~/Library/Application Support/CrossOver/Bottles/General/drive_c/windows/profiles/crossover/</code>
+     </li>
+    </ul>
+    <h2>Install the <abbr class='smallcaps'>FLAC</abbr> decoder</h2>
+    <ol>
+     <li>Download and extract the <code>flac-1.2.1-win.zip</code> archive.</li>
+     <li><code>flac.exe</code> is located in the <code>bin</code> directory.</li>
+     <li>Move <code>flac.exe</code> to <code>[profile directory]/Desktop/</code> (see previous section for profile location).</li>
+    </ol>
+    <h2>Prepare foobar2000</h2>
+    <ol>
+     <li>Install foobar2000 (<abbr>fb2k</abbr> from now on). I chose to do a single-user install of the normal package.</li>
+     <li>Quit <abbr>fb2k</abbr>.</li>
+     <li>Open <abbr>fb2k</abbr>’s components directory. By default, this is located at <code>[profile directory]/Desktop/foobar2000/components</code>.</li>
+     <li>Re-open <abbr>fb2k</abbr>.</li>
+     <li>Open the preferences window. The ‘Components’ section should include the <abbr class='smallcaps'>DTS</abbr> decoder.</li>
+    </ol>
+    <h2>Converting from <abbr class='smallcaps'>DTS</abbr> to <abbr class='smallcaps'>FLAC</abbr>
+    </h2>
+    <ol>
+     <li>The <abbr class='smallcaps'>DTS</abbr> files need to have a <code>.dts</code> file extension. If they have a <code>.wav</code> extension, rename them.</li>
+     <li>For convenience, the files (or their containing folder) should be moved to your (<abbr class='smallcaps'>OS Ⅹ</abbr>) desktop.</li>
+     <li>In <abbr>fb2k</abbr> add the files to the playlist (File → Add Files/Add Folder → My Mac Desktop)</li>
+     <li>Make sure the files are selected in the playlist.</li>
+     <li>Right-click the selected files and select ‘Convert…’.</li>
+     <li>Change the output format to <abbr class='smallcaps'>FLAC</abbr>.</li>
+     <li>Create a destination folder on the <abbr class='smallcaps'>OS Ⅹ</abbr> desktop.</li>
+     <li>Set this folder as <abbr>fb2k</abbr>’s output path.</li>
+     <li>Go to the Processing tab.</li>
+     <li>Enable <abbr class='smallcaps'>DSP</abbr>.</li>
+     <li>Add ‘Convert 5.1 to stereo’ to the list of active <abbr class='smallcaps'>DSP</abbr>s.</li>
+     <li>Optionally, enable Other → Show full status report.</li>
+     <li>Click ‘OK’.</li>
+     <li>You may be warned about upconverting from a lossy to lossless format. This warning is likely bogus, so ignore it.</li>
+     <li>If this is the first time through, you will be prompted for the location of <code>flac.exe</code>. </li>
+     <li>Conversion will begin.</li>
+     <li>After completion, <abbr>fb2k</abbr> and CrossOver can be quit.</li>
+    </ol>
+    <h2>Prepare iTunes</h2>
+    <p>Originally, this required <a href='http://earpick.wordpress.com/2007/06/11/how-to-play-flac-in-itunes-on-mac/'>more work</a>, but the above-linked <a href='http://cubicfruit.com/fluke/'>Fluke</a> does it automatically.</p>
+    <h2>Converting from <abbr class='smallcaps'>FLAC</abbr> to <abbr class='smallcaps'>ALAC</abbr> (Apple Lossless)</h2>
+    <ol>
+     <li>Drag the <abbr class='smallcaps'>FLAC</abbr> files created in the previous steps onto <code>set OggS.app</code>. A log window will appear stating that everything worked; click ‘Quit’.</li>
+     <li>In iTunes’ preferences change the importer to Apple Lossless (General → Import Settings… → Import Using: Apple Lossless Encoder).</li>
+     <li>Select the <abbr class='smallcaps'>FLAC</abbr> files you want to convert.</li>
+     <li>Right-click the selected files and select ‘Create Apple Lossless version’.</li>
+     <li>The conversion may take a while. When it completes, remove the <abbr>FLAC</abbr> files from iTunes.</li>
+    </ol>
+    <h2>That’s it!</h2>
+    <p>If everything’s gone well, you’ll have the converted Apple Lossless files sitting in iTunes.</p>
+    <h2>Final comments</h2>
+    <p>You may want to keep the original <abbr class='smallcaps'>DTS</abbr> files around in case they or their extra channels are eventually useful; you’ll have to decide whether disk space or quality are more important.</p>
+    <p>Originally, I attempted to do a straight conversion and retain the four channels across each step, but that didn’t quite work out. Although Apple Lossless is capable of handling up to eight channels, it seems iTunes’ converter doesn’t understand more than two. Hopefully this will change in the future.</p>
+   </div>
+  </div>
+
+  <p id='footer'>Copyleft</p>
+ </body>
+</html>

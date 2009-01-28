@@ -1,0 +1,126 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ background: #000 url('media/bg.gif') bottom right no-repeat fixed;
+ color: #828282;
+ font: 62.5% Calibri, Verdana, sans-serif;
+ margin: 0 auto;
+ padding: 15px 30px;
+ width: 865px;
+}
+body.articles #categories #articles, body.articles #categories #articles:hover {
+ border-bottom: medium double #f0c;
+}
+
+#masthead #nameplate {
+ margin-bottom: 30px;
+}
+#masthead #nameplate a {
+ background: url('media/nameplate.png') bottom left no-repeat;
+ display: block;
+ height: 90px;
+ text-indent: -1000em;
+ width: 315px;
+}
+#masthead #categories {
+ clear: both;
+ height: 30px;
+ list-style: none;
+ margin-bottom: 60px;
+}
+#masthead #categories li {
+ float: left;
+ width: 205px;
+}
+#masthead #categories li + li {
+ margin-left: 15px;
+}
+#masthead #categories li a {
+ background-position: bottom left;
+ background-repeat: no-repeat;
+ display: block;
+ height: 30px;
+ text-indent: -1000em;
+}
+#masthead #categories li a:hover {
+ border-bottom: 1px solid #f0c;
+}
+#masthead #categories #articles {
+ background-image: url('media/articles.png');
+}
+#masthead #categories #reviews {
+ background-image: url('media/reviews.png');
+}
+#masthead #categories #links {
+ background-image: url('media/links.png');
+}
+#masthead #categories #themes {
+ background-image: url('media/themes.png');
+}
+
+#content {
+ margin-bottom: 60px;
+}
+#content .meta {
+ margin-bottom: 15px;
+ position: relative;
+}
+#content .meta h1 {
+ font: normal 30px "Chaparral Pro", serif;
+ width: 645px;
+}
+#content .meta p {
+font-size: 15px;
+ position: absolute;
+ right: 0;
+ top: 0;
+ width: 205px;
+}
+#content .copy {
+ font-size: 1.4em;
+ line-height: 1.6em;
+}
+#content .copy p {
+ width: 645px;
+}
+#content .copy p + p {
+ margin-top: 15px;
+}
+#content .illustration {
+ margin: 30px 0;
+ position: relative;
+}
+#content .illustration img {
+ border: 1px solid #828282;
+}
+#content .illustration img.small {
+ width: 95px;
+}
+#content .illustration img.medium {
+ width: 205px;
+}
+#content .illustration img.large {
+ height: 258px;
+ width: 643px;
+}
+#conttent .illustration img.huge {
+ width: 865px;
+}
+#content .illustration .caption {
+ font-size: 1.2em;
+ font-style: italic;
+ height: 180px;
+ line-height: 15px;
+ position: absolute;
+ right: 0;
+ top: 0;
+ width: 205px;
+}
+
+#footer {
+ border-top: 1px solid #828282;
+ font-size: 1.2em;
+}

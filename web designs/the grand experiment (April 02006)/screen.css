@@ -1,0 +1,61 @@
+a {
+ text-decoration: none;
+}
+a:hover {
+ border-bottom: 1px solid #fff;
+}
+body { background: #000 url('bg.png') top left repeat-x; }
+body, h1, h2, h3, h4, p { margin: 0; }
+h1 {
+ display: inline;
+ text-indent: -1000em;
+}
+h1 a {
+ background: url('logo.png') top left no-repeat;
+ border: none;
+ display: block;
+ height: 66px;
+ width: 315px;
+}
+h1 a:hover {
+ background-image: url('logo_hover.png');
+ border: none;
+}
+h3 {
+ font: bold 24pt "times new roman", sans-serif;
+ color: #980020;
+}
+h4 {
+ color: #705a62;
+ font: 14pt Palatino, Times, "Times New Roman", serif;
+}
+p {
+ color: #9aa;
+ font: 0.9em sans-serif;
+ line-height: 1.7em;
+ text-indent: 2em;
+ word-spacing: 0.1em;
+}
+#header {
+ margin-bottom: 78px;
+}
+#header h2 {
+ font: 10px arial, sans-serif;
+ text-align: center;
+text-transform: uppercase;
+position: absolute;
+right: 25%;
+top: 0;
+}
+#header h2 a {
+ border: none;
+ color: #fff;
+}
+#wrapper {
+ margin: 0 20px 20px 20px;
+}
+.article {
+ margin-bottom: 30px;
+ -moz-column-count: 2;
+ -moz-column-gap: 2em;
+}

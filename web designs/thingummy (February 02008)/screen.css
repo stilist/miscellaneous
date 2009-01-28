@@ -1,0 +1,92 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font: 62.5% "Trebuchet MS", sans-serif;
+ margin: 15px auto;
+ padding: 0 15px;
+ width: 815px;
+}
+
+#masthead {
+ height: 90px;
+ margin-bottom: 50px;
+ position: relative;
+}
+#masthead #logo {
+ display: block;
+ height: 91px;
+ text-indent: -1000em;
+ width: 255px;
+}
+#masthead #archives {
+ bottom: -1px;
+ display: block;
+ height: 27px;
+ left: 280px;
+ position: absolute;
+ text-indent: -1000em;
+ width: 114px;
+}
+#masthead #archivesearch {
+ bottom: 0;
+ position: absolute;
+ right: 0;
+}
+#masthead #archivesearch #searchbox {
+ font: inherit;
+ height: 2.5em;
+ width: 255px;
+}
+
+#content {
+ margin-bottom: 50px;
+ margin-left: 238px;
+ width: 535px;
+}
+#content h1 {
+ font-size: 1.8em;
+ font-weight: normal;
+}
+#content p {
+ font-size: 1.4em;
+ line-height: 1.6em;
+ margin: 1em 0;
+}
+#content p.meta {
+ height: 1.8em;
+ left: -238px;
+ margin: 0;
+ position: absolute;
+ text-align: right;
+ top: .125em;
+ width: 194px;
+}
+#content ul {
+ font-size: 1.4em;
+}
+#content ul.inline li {
+ display: inline;
+}
+#content .entry {
+ background-position: .275em left;
+ background-repeat: no-repeat;
+ margin-bottom: 50px;
+ padding-left: 42px;
+ position: relative;
+}
+
+#footer {
+ border-top: 1px dashed #8c8c8c;
+ clear: both;
+ font-size: 1.2em;
+ line-height: 1.6em;
+ padding: .5em 0;
+}
+
+.smallcaps {
+ font-size: .8em;
+ text-transform: uppercase;
+}

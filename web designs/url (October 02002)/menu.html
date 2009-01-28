@@ -1,0 +1,114 @@
+<html>
+<head>
+<style type='text/css'>
+body{border-right:1 solid #fe6633}
+.line{border-bottom:1 solid #999999}
+</style>
+<script language='javascript'>
+function newImage(arg){
+ if (document.images){
+  rslt = new Image();
+  rslt.src = arg;
+  return rslt;
+ }
+}
+
+function changeImages(){
+ if (document.images && (preloadFlag == true)){
+  for (var i=0; i<changeImages.arguments.length; i+=2){
+   document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+  }
+ }
+}
+
+var preloadFlag = false;
+function preloadImages(){
+ if (document.images){
+  clipart_over = newImage("images/clipart_over.png");
+  wallpaper_over = newImage("images/wallpaper_over.png");
+  vbprogs_over = newImage("images/vbprogs_over.png");
+  qbasic_over = newImage("images/qbasic_over.png");
+  skins_over = newImage("images/skins_over.png");
+  avs_over = newImage("images/avs_over.png");
+  webpages_over = newImage("images/webpages_over.png");
+  favartists_over = newImage("images/favartists_over.png");
+  preloadFlag = true;
+ }
+}
+</script>
+</head>
+<body topmargin='0' leftmargin='0' rightmargin='0' bottommargin='0' marginwidth='0' marginheight='0' bgcolor='#32457d' onload='preloadImages()' background='images/bottombar.png'>
+<table border='0' cellpadding='0' cellspacing='0'>
+ <tr>
+  <td colspan='2'>
+   <img src='images/topbar.png' width='250' height='15'/></td>
+ </tr>
+ <tr>
+  <td rowspan='10'>
+   <img src='images/sidebar.png' width='25' height='375'/></td>
+  <td>
+   <img src='images/contents.png' width='225' height='30'/></td>
+ </tr>
+ <tr>
+  <td><span class='line'>
+   <a href='pages/clipart.html' target='text'
+	onmouseover="changeImages('clipart', 'images/clipart_over.png'); return true;"
+	onmouseout="changeImages('clipart', 'images/clipart.png'); return true;">
+	 <img name='clipart' src='images/clipart.png' width='225' height='30' border='0'/></a></span></td>
+ </tr>
+ <tr>
+  <td><span class='line'>
+   <a href='pages/wallpaper.html' target='text'
+	onmouseover="changeImages('wallpaper', 'images/wallpaper_over.png'); return true;"
+	onmouseout="changeImages('wallpaper', 'images/wallpaper.png'); return true;">
+	 <img name='wallpaper' src='images/wallpaper.png' width='225' height='30' border='0'/></a></span></td>
+ </tr>
+ <tr>
+  <td><span class='line'>
+   <a href='pages/vbprogs.html' target='text'
+	onmouseover="changeImages('vbprogs', 'images/vbprogs_over.png'); return true;"
+	onmouseout="changeImages('vbprogs', 'images/vbprogs.png'); return true;">
+	 <img name='vbprogs' src='images/vbprogs.png' width='225' height='30' border='0'/></a></span></td>
+ </tr>
+ <tr>
+  <td><span class='line'>
+   <a href='pages/qbasic.html' target='text'
+	onmouseover="changeImages('qbasic', 'images/qbasic_over.png'); return true;"
+	onmouseout="changeImages('qbasic', 'images/qbasic.png'); return true;">
+	 <img name='qbasic' src='images/qbasic.png' width='225' height='30' border='0'/></a></span></td>
+ </tr>
+ <tr>
+  <td><span class='line'>
+   <a href='pages/skins.html' target='text'
+	onmouseover="changeImages('skins', 'images/skins_over.png'); return true;"
+	onmouseout="changeImages('skins', 'images/skins.png'); return true;">
+	 <img name='skins' src='images/skins.png' width='225' height='30' border='0'/></a></span></td>
+ </tr>
+ <tr>
+  <td><span class='line'>
+   <a href='pages/avs.html' target='text'
+	onmouseover="changeImages('avs', 'images/avs_over.png'); return true;"
+	onmouseout="changeImages('avs', 'images/avs.png'); return true;">
+	 <img name='avs' src='images/avs.png' width='225' height='30' border='0'/></a></span></td>
+ </tr>
+ <tr>
+  <td><span class='line'>
+   <a href='pages/webpages.html' target='text'
+	onmouseover="changeImages('webpages', 'images/webpages_over.png'); return true;"
+	onmouseout="changeImages('webpages', 'images/webpages.png'); return true;">
+	 <img name='webpages' src='images/webpages.png' width='225' height='30' border='0'/></a></span></td>
+ </tr>
+ <tr>
+  <td><span class='line'>
+   <a href='pages/favartists.html' target='text'
+	onmouseover="changeImages('favartists', 'images/favartists_over.png'); return true;"
+	onmouseout="changeImages('favartists', 'images/favartists.png'); return true;">
+	 <img name='favartists' src='images/favartists.png' width='225' height='30' border='0'/></a></span></td>
+ </tr>
+ <tr>
+  <td>
+   <img src='images/bottombar.png' width='225' height='105'/></td>
+ </tr>
+</table>
+</body>
+</html>

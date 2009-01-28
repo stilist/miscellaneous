@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteBase /rotate/
+
+ #for the image rotator
+ RewriteCond ^image\.jpg$ index.php [L]
+</IfModule>

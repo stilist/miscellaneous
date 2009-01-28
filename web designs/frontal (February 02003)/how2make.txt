@@ -1,0 +1,27 @@
+logo.gif
+----------
+size: 110x110
+colors: 000000 & ff9900 & ffffff
+layers: rain, rain copy, sun, layer1, background
+tech:
+ >> rain
+    * wingdings
+    * 75 points
+    * ff9900
+    * smooth
+ >> rain copy
+    * wingdings
+    * 80 points
+    * 000000
+    * smooth
+ >> sun
+    * wingdings
+    * 95 points
+    * ff9900
+    * smooth
+ >> layer1
+    * 2 off each side
+    * smooth corners
+    * 000000
+ >> background
+    * ff9900

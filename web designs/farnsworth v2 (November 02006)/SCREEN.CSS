@@ -1,0 +1,58 @@
+* {
+margin: 0;
+}
+body {
+ border-top: 24px solid #000;
+ font-size: 62.5%;
+ padding: 485px 20px 20px 20px;
+}
+h1 {
+left: -2000em;
+position: absolute;
+}
+h2 a {
+}
+html {
+ background: #fff url('farnsworth.jpg') center 200px no-repeat;
+ border-top: 3px solid #fff;
+ font-family: Helvetica, Arial, sans-serif;
+}
+ol, ul { padding: 0; }
+
+#content {
+/* list-style: none; */
+}
+#content ul {
+list-style: disc outside none;
+}
+#quicklinks {
+ height: 138px;
+ list-style: none;
+ padding-right: 5px;
+ position: absolute;
+ right: 0;
+ text-align: right;
+ top: 3px;
+}
+#quicklinks li {
+ float: left;
+ padding-left: 10px;
+}
+#quicklinks a {
+ color: #fff;
+ font-size: 1.5em;
+ text-decoration: none;
+}
+#ratafia_logo {
+ left: 0;
+ position: absolute;
+ top: 37px;
+}
+
+.current {
+ position: static !important;
+}
+.hidden {
+ left: -1000em;
+ position: absolute;
+}

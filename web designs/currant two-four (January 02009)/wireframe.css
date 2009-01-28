@@ -1,0 +1,17 @@
+html, body {
+ background: #fff;
+}
+
+/*
+body {
+ background: url('gridbg.gif');
+}
+
+body * {
+ background-color: rgba(0, 0, 0, .2);
+}
+
+abbr, a, code, .copy {
+ background: none;
+}
+*/
